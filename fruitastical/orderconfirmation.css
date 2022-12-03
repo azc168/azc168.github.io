@@ -1,0 +1,70 @@
+/* Shaina Patel */
+
+
+html {
+    min-height: 100%;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+header > h1 {
+    color: black;
+}
+
+main {
+    padding-top: 15%;
+    padding-left: 10%; padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container > a {
+    text-decoration: none;
+    color: black;
+}
+
+.green-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #f1ffab;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    border-radius: 5px;
+    min-height: 50px;
+    min-width: 200px;
+    transition: 0.3s;
+    margin-bottom: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.green-button:hover {
+    box-shadow: 5px 5px 3px gray;
+}
+
+.orange-button {
+    background-color: #fb9a40;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    right: 5%;
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: 50px;
+}
