@@ -1,0 +1,118 @@
+/* Jiaying Li */
+body {
+    display: grid;
+    grid-template-rows: auto 6fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    grid-row: 1/2;
+}
+
+.page-title {
+    color: rgba(232, 97, 0, 1);
+    font-family: 'Modak', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    margin-left: auto;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1em;
+}
+
+
+header > h1 {
+    color: black;
+    /* margin-left: auto; */
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.large-image {
+    width: 100%;
+    height: 90%;
+    max-height: 500px;
+    max-width: 930px;
+}
+
+main {
+    grid-row: 2/3;
+    padding-left: 5%; padding-right: 5%;
+}
+
+footer {
+    grid-row: 3/4;
+    background-color: #fbd341;
+    height: 100px;
+    display: flex;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container > a {
+    text-decoration: none;
+    color: black;
+}
+
+.green-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #f1ffab;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    border-radius: 5px;
+    min-height: 50px;
+    min-width: 200px;
+    transition: 0.3s;
+    margin-bottom: 20%;
+}
+
+.green-button:hover {
+    box-shadow: 5px 5px 3px gray;
+}
+
+.orange-button {
+    background-color: #fb9a40;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    right: 5%;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 1000px) {
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .img-container {
+        grid-column: 1/2;
+    }
+
+    .info-container {
+        grid-column: 2/3;
+        padding: 5%;
+    }
+}

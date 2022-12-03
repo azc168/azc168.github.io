@@ -1,0 +1,225 @@
+<!--Alan Chen-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+        initial-scale-1, shrink-to-fit=no"
+    />
+    <title>Fruitastical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Modak&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo-image" src="img/logo.png" alt="logo image" />
+      <h1>Fruitastical</h1>
+      <!-- HAMBURGER MENU FOR MOBILE -->
+      <!-- we will need to set this div to display: none in the media query for desktop -->
+      <!-- so we can replace it with the navigation menu for desktop -->
+      <div id="mySidenav" class="sidenav">
+        <a
+          class="nav-item closebtn"
+          href="javascript:void(0)"
+          onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="nav-item-container">
+          <a href="index.html"
+            ><img class="logo-image" src="img/logo.png" alt="logo image"></a>
+          <a class="nav-item website-name" href="index.html">Fruitastical</a>
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="nav-item" href="bulkbuy.html">Buy Bulk Packages</a>
+          <a class="nav-item" href="individual.html">Buy Individual Fruits</a>
+          <a class="nav-item" href="recipes.html">Recipes and Facts</a>
+          <a class="nav-item" href="cart.html">View Cart</a>
+        </div>
+      </div>
+
+      <!-- Use the three bars to open the menu -->
+      <span class="burger" onclick="openNav()"
+        ><i class="fa fa-bars fa-lg"></i
+      ></span>
+    </header>
+    <div class="heading">
+      <h1>My Cart</h1>
+      <a href="index.html">continue shopping ></a>
+    </div>
+    <div class="grid">
+      <div class="product-side">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img
+                src="img/mangosteens.jpg"
+                class="img-fluid w-100"
+                alt="mangosteens"
+              />
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title">Mangosteens</h5>
+                <div class="card-counter">
+                  <button>-</button>
+                  <div class="card-counter-number">2</div>
+                  <button>+</button>
+                </div>
+                <a class="card-text">
+                  <small class="text-muted">Remove</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img
+                src="img/tropicalfruit.jpg"
+                class="img-fluid w-100"
+                alt="card-horizontal-image"
+              />
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title">Tropical Package</h5>
+                <div class="card-counter">
+                  <button>-</button>
+                  <div class="card-counter-number">1</div>
+                  <button>+</button>
+                </div>
+                <a class="card-text">
+                  <small class="text-muted">Remove</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img
+                src="img/sliced-cube-watermelon.jpeg"
+                class="img-fluid w-100"
+                alt="card-horizontal-image"
+              />
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title">Watermelon</h5>
+                <div class="card-counter">
+                  <button>-</button>
+                  <div class="card-counter-number">1</div>
+                  <button>+</button>
+                </div>
+                <a class="card-text">
+                  <small class="text-muted">Remove</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="information-side">
+        <div class="name-suite">
+          <div class="pair">
+            <h5>First Name :</h5>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="pair">
+            <h5>Last Name :</h5>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <br />
+        <h5>Street Address :</h5>
+        <input type="text" class="form-control" placeholder="line 1" />
+        <br />
+        <input type="text" class="form-control" placeholder="line 2" />
+        <br />
+        <div class="name-suite">
+          <div class="pair">
+            <h5>Country :</h5>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="pair">
+            <h5>City :</h5>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <br />
+        <div class="name-suite">
+          <div class="pair">
+            <h5>Zip Code:</h5>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="pair">
+            <h5>State/Province :</h5>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <br />
+        <h5>Credit Card Number :</h5>
+        <input type="text" class="form-control" />
+        <br />
+        <div class="name-suite">
+          <div class="pair">
+            <h5>Expiration Date:</h5>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="pair">
+            <h5>CVV:</h5>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="checkout-suite">
+      <h5>Total Cost: $266.97</h5>
+      <a href="orderconfirmation.html"><button>Checkout</button></a>
+    </div>
+    <footer class="footer">
+      <div class="footertext">
+        Contact Us!<br />Email: fruits101@gmail.com<br />Phone: 919-123-4567
+      </div>
+      <a href="sell.html"><button type="button" class="orangebutton">Sell With Us</button></a>
+    </footer>
+
+    <!-- HAMBURGER MENU SCRIPT FROM W3SCHOOLS -->
+    <script>
+      // hamburger
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

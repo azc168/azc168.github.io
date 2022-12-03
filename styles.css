@@ -1,0 +1,210 @@
+/* Shaina Patel */
+
+body {
+    margin: 0px;
+}
+
+.fullgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1.5fr 3fr;
+}
+
+header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #f1ffab;
+    height: 70px;
+    box-shadow: 0 0 8px 3px grey;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%; padding-right: 3%;
+    align-items: center;
+}
+
+.logo-image {
+    margin-top: 20px;
+    height: 100px;
+    width: 90px;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+    text-align: center;
+    margin-left: -50px;
+    font-weight: normal;
+}
+
+.fruitimg {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(img/homepage1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.text {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+.picturecollage {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.pictureone {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(img/rambutan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.picturetwo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(img/dragonfruit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.picturethree {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(img/guava.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.buttoncontainer {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+}
+
+.greenbutton {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    border: none;
+    background-color: #f1ffab;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+}
+
+.greenbutton:hover {
+    box-shadow: 5px 5px 3px gray;
+}
+
+.footer {
+    background-color: #fbd341;
+    height: 100px;
+    display: flex;
+}
+
+.footertext {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.orangebutton {
+    background-color: #fb9a40;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    right: 5%;
+    margin-top: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/* HAMBURGER MENU W3SCHOOLS */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #F1FFAB;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.nav-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+/* The navigation menu links */
+.nav-item {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Comfortaa', cursive;
+}
+
+.website-name {
+    font-family: 'Modak', cursive;
+    font-size: 3em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #E86100;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+.burger {
+    display: block;
+}
+/* END OF BURGER */

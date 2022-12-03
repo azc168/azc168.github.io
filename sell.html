@@ -1,0 +1,75 @@
+<!-- Jiaying Li -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Modak&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="selling-styles.css">
+    <title>Fruitastical - Sell With Us</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-image" src="img/logo.png" alt="logo image"></a>
+        <h1>Fruitastical</h1>  
+        <!-- HAMBURGER MENU FOR MOBILE -->
+        <div id="mySidenav" class="sidenav">
+            <a class="nav-item closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            <div class="nav-item-container">
+                <a href="index.html"><img class="nav-logo" src="img/logo.png" alt="logo"></a>
+                <a class="nav-item website-name" href="index.html">Fruitastical</a>
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="bulkbuy.html">Buy Bulk Packages</a>
+                <a class="nav-item" href="individual.html">Buy Individual Fruits</a>
+                <a class="nav-item" href="recipes.html">Recipes and Facts</a>
+                <a class="nav-item" href="cart.html">View Cart</a>
+            </div>
+        </div>
+        
+        <!-- Use the three bars to open the menu -->
+        <span class="burger" onclick="openNav()"><i class="fa fa-bars fa-lg"></i></span>
+    </header>
+
+    <main>
+        <h1 class="page-title">
+            Sell With Us!
+        </h1>
+        <div class="content-container">
+            <div class="img-container">
+                <img class="large-image" src="img/ecommerce.jpeg" alt="a toy shopping cart">
+            </div>
+            
+            <div class="info-container">
+                <h2>Would you like to sell your fruit through our store?</h2>
+                <p>We take pride in sourcing our fruit from ethical farmers to provide our customers with the best, freshest fruit on the market.</p>
+                <p>All you need to worry about is producing your fruit, and we'll take care of the rest.</p>
+                <p>Register to sell with us below!</p>
+        
+                <div class="button-container">
+                    <a href="registration.html"><div class="green-button" type="button">Register Now!</div></a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footertext">
+            Contact Us!<br>Email: fruits101@gmail.com<br>Phone: 919-123-4567
+        </div>
+        <a href="sell.html"><button type="button" class="orangebutton">Sell With Us</button></a>
+    </footer>
+
+    <!-- HAMBURGER MENU SCRIPT FROM W3SCHOOLS -->
+    <script> // hamburger
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {document.getElementById("mySidenav").style.width = "100%";}
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+    </script>
+</body>
+</html>
